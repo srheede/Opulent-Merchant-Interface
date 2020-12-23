@@ -922,7 +922,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="createButton:" target="LsS-zI-5BT" id="1by-Go-bQV"/>
+                                    <action selector="createAccountButton:" target="LsS-zI-5BT" id="shQ-ee-L2Y"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j6n-Jb-LgI">

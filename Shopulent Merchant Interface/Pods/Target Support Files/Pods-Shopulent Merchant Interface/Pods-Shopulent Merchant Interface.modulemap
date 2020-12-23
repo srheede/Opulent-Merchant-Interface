@@ -1,0 +1,6 @@
+framework module Pods_Shopulent_Merchant_Interface {
+  umbrella header "Pods-Shopulent Merchant Interface-umbrella.h"
+
+  export *
+  module * { export * }
+}

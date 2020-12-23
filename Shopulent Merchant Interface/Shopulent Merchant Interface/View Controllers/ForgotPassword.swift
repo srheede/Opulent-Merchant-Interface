@@ -21,7 +21,10 @@ class ForgotPassword: NSViewController {
     }
     
     @IBAction func resetPasswordButton(_ sender: Any) {
+        let email: String = emailTextField.stringValue
+        if (Utilities.isValidEmail(email: email)){
+            
+        }
     }
-    
     
 }

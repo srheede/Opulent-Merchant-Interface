@@ -24,6 +24,12 @@ class Register: NSViewController {
     }
     
     @IBAction func createAccountButton(_ sender: Any) {
+        let password: String = passwordTextField.stringValue
+        let email: String = emailTextField.stringValue
+        let confirmPassword: String = confirmTextField.stringValue
+        if (Utilities.isValidEmail(email: email) && Utilities.isValidPassword(password: password) && Utilities.isPasswordsMatch(password: password, confirmPassword: confirmPassword)){
+            
+            }
     }
     
 }

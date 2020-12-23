@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F4645AE2593D93C00E357EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F4645AD2593D93C00E357EB /* GoogleService-Info.plist */; };
+		0F4645B12593DB5400E357EB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0F4645B02593DB5400E357EB /* .gitignore */; };
 		0F68FFB32592038900FAAEC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FFB22592038900FAAEC4 /* AppDelegate.swift */; };
 		0F68FFB52592038900FAAEC4 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FFB42592038900FAAEC4 /* Login.swift */; };
 		0F68FFB72592038B00FAAEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F68FFB62592038B00FAAEC4 /* Assets.xcassets */; };
@@ -15,9 +17,12 @@
 		0F68FFC72592042400FAAEC4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FFC62592042400FAAEC4 /* Home.swift */; };
 		0F68FFCD2593279000FAAEC4 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FFCC2593279000FAAEC4 /* ForgotPassword.swift */; };
 		0F68FFD22593326C00FAAEC4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FFD12593326C00FAAEC4 /* Utilities.swift */; };
+		26BF28A60868750CEBA1CDE9 /* Pods_Shopulent_Merchant_Interface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9831FE3B77490900F8F94976 /* Pods_Shopulent_Merchant_Interface.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F4645AD2593D93C00E357EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F4645B02593DB5400E357EB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0F68FFAF2592038900FAAEC4 /* Shopulent Merchant Interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopulent Merchant Interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F68FFB22592038900FAAEC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F68FFB42592038900FAAEC4 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -29,6 +34,9 @@
 		0F68FFC62592042400FAAEC4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		0F68FFCC2593279000FAAEC4 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		0F68FFD12593326C00FAAEC4 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9700AD11FE7FF1D3F23DEFF0 /* Pods-Shopulent Merchant Interface.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopulent Merchant Interface.release.xcconfig"; path = "Target Support Files/Pods-Shopulent Merchant Interface/Pods-Shopulent Merchant Interface.release.xcconfig"; sourceTree = "<group>"; };
+		9831FE3B77490900F8F94976 /* Pods_Shopulent_Merchant_Interface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shopulent_Merchant_Interface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA29A1D5E2986352EF858D65 /* Pods-Shopulent Merchant Interface.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopulent Merchant Interface.debug.xcconfig"; path = "Target Support Files/Pods-Shopulent Merchant Interface/Pods-Shopulent Merchant Interface.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BF28A60868750CEBA1CDE9 /* Pods_Shopulent_Merchant_Interface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +56,8 @@
 			children = (
 				0F68FFB12592038900FAAEC4 /* Shopulent Merchant Interface */,
 				0F68FFB02592038900FAAEC4 /* Products */,
+				31E47AA679B8CF9AC71256AB /* Pods */,
+				F475E491AED73858510A219B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +79,8 @@
 				0F68FFB82592038B00FAAEC4 /* Main.storyboard */,
 				0F68FFBB2592038B00FAAEC4 /* Info.plist */,
 				0F68FFBC2592038B00FAAEC4 /* Shopulent_Merchant_Interface.entitlements */,
+				0F4645AD2593D93C00E357EB /* GoogleService-Info.plist */,
+				0F4645B02593DB5400E357EB /* .gitignore */,
 			);
 			path = "Shopulent Merchant Interface";
 			sourceTree = "<group>";
@@ -91,6 +104,23 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		31E47AA679B8CF9AC71256AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA29A1D5E2986352EF858D65 /* Pods-Shopulent Merchant Interface.debug.xcconfig */,
+				9700AD11FE7FF1D3F23DEFF0 /* Pods-Shopulent Merchant Interface.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F475E491AED73858510A219B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9831FE3B77490900F8F94976 /* Pods_Shopulent_Merchant_Interface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F68FFBF2592038B00FAAEC4 /* Build configuration list for PBXNativeTarget "Shopulent Merchant Interface" */;
 			buildPhases = (
+				25C1A4D6D0000E2B5A6E7C66 /* [CP] Check Pods Manifest.lock */,
 				0F68FFAB2592038900FAAEC4 /* Sources */,
 				0F68FFAC2592038900FAAEC4 /* Frameworks */,
 				0F68FFAD2592038900FAAEC4 /* Resources */,
+				0F1E1F87EEEAC789D2061D97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,12 +180,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4645B12593DB5400E357EB /* .gitignore in Resources */,
 				0F68FFB72592038B00FAAEC4 /* Assets.xcassets in Resources */,
 				0F68FFBA2592038B00FAAEC4 /* Main.storyboard in Resources */,
+				0F4645AE2593D93C00E357EB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F1E1F87EEEAC789D2061D97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shopulent Merchant Interface/Pods-Shopulent Merchant Interface-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shopulent Merchant Interface/Pods-Shopulent Merchant Interface-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shopulent Merchant Interface/Pods-Shopulent Merchant Interface-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25C1A4D6D0000E2B5A6E7C66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shopulent Merchant Interface-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F68FFAB2592038900FAAEC4 /* Sources */ = {
@@ -300,6 +376,7 @@
 		};
 		0F68FFC02592038B00FAAEC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA29A1D5E2986352EF858D65 /* Pods-Shopulent Merchant Interface.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +396,7 @@
 		};
 		0F68FFC12592038B00FAAEC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9700AD11FE7FF1D3F23DEFF0 /* Pods-Shopulent Merchant Interface.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
