@@ -688,7 +688,7 @@
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="710" height="320"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -757,7 +757,6 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="loginButton:" target="XfG-lQ-9wD" id="TnD-wS-Jlc"/>
-                                    <segue destination="KCk-Zk-zzh" kind="show" id="OWr-3M-eTs"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MqL-Av-gIU">
@@ -777,7 +776,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="LsS-zI-5BT" kind="sheet" id="img-2w-QbR"/>
+                                    <segue destination="LsS-zI-5BT" kind="sheet" id="mpU-ec-o8d"/>
                                 </connections>
                             </button>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qL-5p-Fvp">
@@ -802,16 +801,17 @@
                     <connections>
                         <outlet property="emailTextField" destination="tL4-Rh-REq" id="bB0-Va-g6s"/>
                         <outlet property="passwordTextField" destination="z6g-Py-P5M" id="N8N-bP-cfx"/>
+                        <segue destination="KCk-Zk-zzh" kind="show" identifier="loginSegue" id="UEU-ft-Wvy"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
-        <!--Home Window Controller-->
+        <!--Main Window Controller-->
         <scene sceneID="Suy-sK-UQv">
             <objects>
-                <windowController id="KCk-Zk-zzh" userLabel="Home Window Controller" sceneMemberID="viewController">
+                <windowController id="KCk-Zk-zzh" userLabel="Main Window Controller" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="z95-Dy-19d">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -833,14 +833,17 @@
             </objects>
             <point key="canvasLocation" x="260" y="1291"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="2m8-D7-Hbf">
             <objects>
-                <viewController id="mdl-O4-Vlx" userLabel="Home View Controller" sceneMemberID="viewController">
+                <viewController title="Shopulent Merchant Interface" id="mdl-O4-Vlx" userLabel="Main View Controller" customClass="Main" customModule="Shopulent_Merchant_Interface" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="vge-3c-c35">
                         <rect key="frame" x="0.0" y="0.0" width="1080" height="720"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <connections>
+                        <outlet property="mainView" destination="vge-3c-c35" id="O5U-V9-aMH"/>
+                    </connections>
                 </viewController>
                 <customObject id="vHV-Bk-l46" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

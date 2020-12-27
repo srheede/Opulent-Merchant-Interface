@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import FirebaseAuth
 
 class Login: NSViewController {
 
@@ -14,7 +15,6 @@ class Login: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -28,6 +28,27 @@ class Login: NSViewController {
     }
     
     @IBAction func loginButton(_ sender: Any) {
+        let email = emailTextField.stringValue
+        let password = passwordTextField.stringValue
+    
+
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            if let error = error {
+                let alert = NSAlert()
+                alert.messageText = "Authentication Error"
+                alert.informativeText = error.localizedDescription
+                alert.addButton(withTitle: "OK")
+                alert.alertStyle = NSAlert.Style.critical
+                alert.runModal()
+            } else {
+                 
+                self?.performSegue(withIdentifier: "loginSegue", sender: self)
+                
+                
+       
+
+            }
+        }
     }
 }
 

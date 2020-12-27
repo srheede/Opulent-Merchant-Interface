@@ -1,17 +1,17 @@
 //
-//  Home.swift
+//  Main.swift
 //  Shopulent Merchant Interface
 //
-//  Created by Stefan Rheeders on 12/22/20.
+//  Created by Stefan Rheeders on 12/26/20.
 //
 
 import Cocoa
 
-class Home: NSViewController {
+class Main: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        
     }
     
 }
