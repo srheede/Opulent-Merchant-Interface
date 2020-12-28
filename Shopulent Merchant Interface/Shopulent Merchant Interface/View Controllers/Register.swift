@@ -39,7 +39,7 @@ class Register: NSViewController {
                     alert.alertStyle = NSAlert.Style.critical
                     alert.runModal()
                 } else {
-                    
+                self.dismiss(self)
                 }
             }
             

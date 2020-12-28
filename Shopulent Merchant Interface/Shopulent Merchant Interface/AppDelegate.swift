@@ -21,7 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     FirebaseApp.configure()
 
     Database.database().isPersistenceEnabled = true
-
+    
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {

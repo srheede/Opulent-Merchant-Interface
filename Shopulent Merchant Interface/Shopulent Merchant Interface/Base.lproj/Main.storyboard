@@ -792,8 +792,7 @@
                                     <font key="font" metaFont="smallSystemBold"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="forgotPasswordButton:" target="XfG-lQ-9wD" id="9LT-sJ-VgC"/>
-                                    <segue destination="Xvc-Wk-Hkw" kind="sheet" id="2tQ-Pe-PoI"/>
+                                    <action selector="closeit:" target="XfG-lQ-9wD" id="Xb0-KG-36t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -812,7 +811,7 @@
         <scene sceneID="Suy-sK-UQv">
             <objects>
                 <windowController id="KCk-Zk-zzh" userLabel="Main Window Controller" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="z95-Dy-19d">
+                    <window key="window" title="Shopulent Merchant Interface" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="z95-Dy-19d">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="163" y="208" width="1080" height="720"/>
@@ -840,14 +839,29 @@
                     <view key="view" id="vge-3c-c35">
                         <rect key="frame" x="0.0" y="0.0" width="1080" height="720"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5d4-6U-mFf">
+                                <rect key="frame" x="988" y="13" width="83" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Log Out" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4oL-z8-bXl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="logoutButton:" target="mdl-O4-Vlx" id="AfT-vg-cOh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                     </view>
                     <connections>
+                        <outlet property="logoutButton" destination="5d4-6U-mFf" id="3et-R7-8DA"/>
                         <outlet property="mainView" destination="vge-3c-c35" id="O5U-V9-aMH"/>
+                        <segue destination="B8D-0N-5wS" kind="show" identifier="logoutSegue" id="SyF-fd-EgD"/>
                     </connections>
                 </viewController>
                 <customObject id="vHV-Bk-l46" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="2115"/>
+            <point key="canvasLocation" x="260" y="2112"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="l22-LE-mTj">
