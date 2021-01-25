@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ShopAdd" customModule="Shopulent_Merchant_Interface" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0HN-I0-PJE"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L3y-6x-mrf">
+                    <rect key="frame" x="5" y="3" width="140" height="32"/>
+                    <buttonCell key="cell" type="push" title="Create New Shop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3gl-Pe-RmH">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="35C-T7-FgA">
+                    <rect key="frame" x="7" y="62" width="136" height="111"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="POy-Tj-TnI"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="L3y-6x-mrf" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="B6O-Qy-Wgf"/>
+                <constraint firstItem="L3y-6x-mrf" firstAttribute="top" secondItem="35C-T7-FgA" secondAttribute="bottom" constant="35" id="CLm-vy-3xb"/>
+                <constraint firstItem="35C-T7-FgA" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="QDc-2L-xos"/>
+                <constraint firstAttribute="bottom" secondItem="L3y-6x-mrf" secondAttribute="bottom" constant="10" id="TuV-kG-6fh"/>
+                <constraint firstItem="35C-T7-FgA" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="UCc-jX-wGv"/>
+                <constraint firstAttribute="trailing" secondItem="35C-T7-FgA" secondAttribute="trailing" constant="10" id="wMi-AK-azN"/>
+            </constraints>
+            <point key="canvasLocation" x="-147" y="121"/>
+        </customView>
+        <collectionViewItem id="kDJ-a1-AaE" customClass="ShopAdd" customModule="Shopulent_Merchant_Interface" customModuleProvider="target"/>
+    </objects>
+</document>

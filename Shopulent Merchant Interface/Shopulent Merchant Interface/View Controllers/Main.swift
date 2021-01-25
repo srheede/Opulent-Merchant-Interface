@@ -21,7 +21,12 @@ class Main: NSViewController {
             self.performSegue(withIdentifier: "logoutSegue", sender: self)
           }
         }
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
+    
+    @IBOutlet weak var collectionView: NSCollectionView!
     
     @IBAction func logoutButton(_ sender: Any) {
         let firebaseAuth = Auth.auth()
@@ -36,4 +41,37 @@ class Main: NSViewController {
         alert.runModal()
     }
     }
+}
+
+extension Main: NSCollectionViewDelegate, NSCollectionViewDataSource {
+    func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 12
+    }
+    
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        if (indexPath.item == 0){
+            let collectionItem = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: ("ShopAdd")), for: indexPath) as! ShopAdd
+            collectionItem.view.wantsLayer = true
+            collectionItem.view.layer?.backgroundColor = NSColor.gridColor.cgColor
+            return collectionItem
+        } else {
+        let collectionItem = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: ("ShopList")), for: indexPath) as! ShopList
+            collectionItem.view.wantsLayer = true
+            collectionItem.view.layer?.backgroundColor = NSColor.gridColor.cgColor
+            return collectionItem
+        
+        }
+    }
+    
+    func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
+        collectionView.deselectItems(at: indexPaths)
+        let alert = NSAlert()
+        alert.messageText = "You selected:"
+        alert.informativeText = indexPaths.debugDescription
+        alert.addButton(withTitle: "OK")
+        alert.alertStyle = NSAlert.Style.critical
+        alert.runModal()
+    }
+    
+    
 }
