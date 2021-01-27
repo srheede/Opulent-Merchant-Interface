@@ -6,15 +6,18 @@
 //
 
 import Cocoa
+import FirebaseDatabase
 import FirebaseAuth
 
 class Main: NSViewController {
+    
+    private var shopCount = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Auth.auth().addStateDidChangeListener { auth, user in
-          if let firebaseUser = user {
+            if user != nil {
             // User is signed in. Show home screen
           } else {
             self.view.window!.close()
@@ -24,6 +27,14 @@ class Main: NSViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let firebaseUser = Auth.auth().currentUser?.uid
+        let database = Database.database().reference().child("Merchants").child(firebaseUser!)
+        database.child("shopCount").observe(.value) { (snapshot) in
+            self.shopCount = snapshot.value as! Int
+            self.shopCount += 1
+            self.collectionView.reloadData()
+        }
     }
     
     @IBOutlet weak var collectionView: NSCollectionView!
@@ -44,8 +55,9 @@ class Main: NSViewController {
 }
 
 extension Main: NSCollectionViewDelegate, NSCollectionViewDataSource {
+    
     func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
+        return shopCount
     }
     
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {

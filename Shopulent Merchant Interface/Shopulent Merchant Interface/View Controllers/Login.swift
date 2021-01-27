@@ -7,9 +7,11 @@
 
 import Cocoa
 import FirebaseAuth
+import FirebaseDatabase
 
 class Login: NSViewController {
 
+    private let database = Database.database().reference().child("Merchants")
     @IBOutlet weak var emailTextField: NSTextField!
     @IBOutlet weak var passwordTextField: NSSecureTextField!
     
@@ -40,6 +42,9 @@ class Login: NSViewController {
                         }
                     })
                     do {
+                        let firebaseUser = Auth.auth().currentUser?.uid
+                        let user = User(userID: firebaseUser!, shopCount: 0, shops: [String: Any]() as NSDictionary)
+                        self.database.child(firebaseUser!).setValue(user.nsDictionary)
                         try Auth.auth().signOut()
                     } catch let error as NSError {
                         let alert = NSAlert()

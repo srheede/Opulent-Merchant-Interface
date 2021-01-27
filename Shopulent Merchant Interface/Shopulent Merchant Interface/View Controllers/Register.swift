@@ -17,7 +17,6 @@ class Register: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-            
     }
     
     @IBAction func cancelButton(_ sender: Any) {
@@ -39,11 +38,9 @@ class Register: NSViewController {
                     alert.alertStyle = NSAlert.Style.critical
                     alert.runModal()
                 } else {
-                self.dismiss(self)
+                    self.dismiss(self)
                 }
             }
-            
-            }
+        }
     }
-    
 }

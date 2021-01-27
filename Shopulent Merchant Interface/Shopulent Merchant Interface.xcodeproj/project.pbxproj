@@ -15,12 +15,14 @@
 		0F68FFC42592040300FAAEC4 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FFC32592040300FAAEC4 /* Register.swift */; };
 		0F68FFCD2593279000FAAEC4 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FFCC2593279000FAAEC4 /* ForgotPassword.swift */; };
 		0F68FFD22593326C00FAAEC4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FFD12593326C00FAAEC4 /* Utilities.swift */; };
+		0FB7C0E125C14C3400881D7C /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7C0E025C14C3400881D7C /* Shop.swift */; };
 		0FD29D36259731A00010AD6A /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD29D35259731A00010AD6A /* Main.swift */; };
 		0FEEF5F525BD975B00D6F51E /* ShopList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FEEF5F425BD975B00D6F51E /* ShopList.xib */; };
 		0FEEF5F825BD985B00D6F51E /* ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEF5F725BD985B00D6F51E /* ShopList.swift */; };
 		0FEEF5FD25BEE5A200D6F51E /* ShopAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEF5FB25BEE5A200D6F51E /* ShopAdd.swift */; };
 		0FEEF5FE25BEE5A200D6F51E /* ShopAdd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FEEF5FC25BEE5A200D6F51E /* ShopAdd.xib */; };
 		0FEEF60825BEEFC400D6F51E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FEEF60725BEEFC400D6F51E /* GoogleService-Info.plist */; };
+		0FEEF60C25BFFA0B00D6F51E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEF60B25BFFA0B00D6F51E /* User.swift */; };
 		26BF28A60868750CEBA1CDE9 /* Pods_Shopulent_Merchant_Interface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9831FE3B77490900F8F94976 /* Pods_Shopulent_Merchant_Interface.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,12 +38,14 @@
 		0F68FFC32592040300FAAEC4 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		0F68FFCC2593279000FAAEC4 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		0F68FFD12593326C00FAAEC4 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		0FB7C0E025C14C3400881D7C /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		0FD29D35259731A00010AD6A /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		0FEEF5F425BD975B00D6F51E /* ShopList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopList.xib; sourceTree = "<group>"; };
 		0FEEF5F725BD985B00D6F51E /* ShopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopList.swift; sourceTree = "<group>"; };
 		0FEEF5FB25BEE5A200D6F51E /* ShopAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopAdd.swift; sourceTree = "<group>"; };
 		0FEEF5FC25BEE5A200D6F51E /* ShopAdd.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopAdd.xib; sourceTree = "<group>"; };
 		0FEEF60725BEEFC400D6F51E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0FEEF60B25BFFA0B00D6F51E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "Shopulent Merchant Interface/User.swift"; sourceTree = SOURCE_ROOT; };
 		9700AD11FE7FF1D3F23DEFF0 /* Pods-Shopulent Merchant Interface.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopulent Merchant Interface.release.xcconfig"; path = "Target Support Files/Pods-Shopulent Merchant Interface/Pods-Shopulent Merchant Interface.release.xcconfig"; sourceTree = "<group>"; };
 		9831FE3B77490900F8F94976 /* Pods_Shopulent_Merchant_Interface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shopulent_Merchant_Interface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA29A1D5E2986352EF858D65 /* Pods-Shopulent Merchant Interface.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopulent Merchant Interface.debug.xcconfig"; path = "Target Support Files/Pods-Shopulent Merchant Interface/Pods-Shopulent Merchant Interface.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		0F68FFB12592038900FAAEC4 /* Shopulent Merchant Interface */ = {
 			isa = PBXGroup;
 			children = (
+				0FEEF60A25BFF91800D6F51E /* Classes */,
 				0F68FFD0259330C300FAAEC4 /* Modules */,
 				0F68FFC92592042C00FAAEC4 /* View Controllers */,
 				0F68FFB22592038900FAAEC4 /* AppDelegate.swift */,
@@ -114,6 +119,15 @@
 				0F68FFD12593326C00FAAEC4 /* Utilities.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		0FEEF60A25BFF91800D6F51E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0FEEF60B25BFFA0B00D6F51E /* User.swift */,
+				0FB7C0E025C14C3400881D7C /* Shop.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		31E47AA679B8CF9AC71256AB /* Pods */ = {
@@ -254,8 +268,10 @@
 				0FD29D36259731A00010AD6A /* Main.swift in Sources */,
 				0FEEF5F825BD985B00D6F51E /* ShopList.swift in Sources */,
 				0F68FFD22593326C00FAAEC4 /* Utilities.swift in Sources */,
+				0FB7C0E125C14C3400881D7C /* Shop.swift in Sources */,
 				0FEEF5FD25BEE5A200D6F51E /* ShopAdd.swift in Sources */,
 				0F68FFC42592040300FAAEC4 /* Register.swift in Sources */,
+				0FEEF60C25BFFA0B00D6F51E /* User.swift in Sources */,
 				0F68FFB52592038900FAAEC4 /* Login.swift in Sources */,
 				0F68FFB32592038900FAAEC4 /* AppDelegate.swift in Sources */,
 				0F68FFCD2593279000FAAEC4 /* ForgotPassword.swift in Sources */,
